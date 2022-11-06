@@ -137,7 +137,7 @@ def split_data_test_eval_train(source_image_dir, image_dir):
     create_directory(train_dir)
     create_directory(test_dir)
 
-    data_size = 4000
+    data_size = 4800
     loop_index = 0
     data_sampsize = int(0.1 * data_size)
     test_samp_array = random.sample(range(data_size), k=data_sampsize)
@@ -227,7 +227,7 @@ if __name__=="__main__":
     EGOHANDS_DATASET_URL = "http://vision.soic.indiana.edu/egohands_files/egohands_data.zip"
     EGO_HANDS_FILE = "egohands_data.zip"
     source_dir = os.path.join('egohands', '_LABELLED_SAMPLES')
-    NUM_DIRECTORIES_TO_KEEP = 45
+    NUM_DIRECTORIES_TO_KEEP = 48
     images_dir = 'images'
 
     download_egohands_dataset(EGOHANDS_DATASET_URL, EGO_HANDS_FILE)
